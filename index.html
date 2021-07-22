@@ -65,7 +65,7 @@
     <!--Hero Section-->
     <section class="container hero-container">
         <h1 class="hero-section-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="main-btn">Заказать услугу</button>
+        <button type="button" class="main-btn" data-modal-open>Заказать услугу</button>
     </section>
 
     <!--Fetures-->
@@ -296,6 +296,8 @@
     </section>
 
 
+   
+
     <!--Footer-->
     <footer>
       <div class="container footer-container">
@@ -340,5 +342,18 @@
           </div>
       </div>
     </footer>
+
+    <!--Backdrop-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-icon">
+            <use href="./images/svg/modal.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
 </body>
 </html>
