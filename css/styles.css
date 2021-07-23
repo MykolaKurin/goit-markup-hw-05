@@ -433,6 +433,9 @@ img {
   width: 44px;
   height: 44px;
   background-color: var(--white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socnetwork-icon-link {
@@ -454,7 +457,6 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -620,6 +622,15 @@ img {
 }
 
 /*Footer*/
+.footer {
+  display: flex;
+  background-color: #2f303a;
+  margin: 0px auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 252px;
+}
+
 .footer-style {
   display: flex;
 }
@@ -628,22 +639,15 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   color: var(--brand-color);
-  margin-right: 93px;
   margin-bottom: 20px;
 }
 .footer-container {
   display: flex;
   align-items: baseline;
-  background-color: var(--footer-color);
-  width: 1600px;
-  height: 252px;
-  margin: 0px auto;
-  padding-left: 143px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 1240px;
 }
+
 .footer-color2 {
   color: var(--white-color);
 }
@@ -660,9 +664,9 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-container {
-  display: block;
   margin-right: 70px;
 }
 
@@ -705,7 +709,9 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  color: var(--grey-color);
+  /* color: var(--grey-color); */
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-mail:hover,
@@ -716,7 +722,6 @@ img {
 .join {
   display: flex;
   flex-direction: column;
-  /* margin-left: 516px; */
 }
 .connect {
   font-family: Roboto;
@@ -728,15 +733,15 @@ img {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-.socnetworks-class-footer {
+.socnetwork-class-footer {
   display: flex;
-  justify-content: space-between;
-  width: 206px;
-  height: 44px;
   align-items: center;
+  margin-top: 16px;
+  padding-bottom: 30px;
+  justify-content: center;
 }
 
-.socnetworks-class-footer:not(:last-child) {
+.socnetwork-icon-item:not(:last-child) {
   margin-right: 10px;
 }
 .socnetwork-item-footer {
@@ -747,6 +752,7 @@ img {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socnetwork-icon-footer {
   width: 20px;
@@ -755,6 +761,7 @@ img {
   justify-content: center;
   display: flex;
   fill: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socnetwork-item-footer:hover,
