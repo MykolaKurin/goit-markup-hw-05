@@ -359,6 +359,25 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.wwd-section-item {
+  position: relative;
+}
+.wwd-text {
+  position: absolute;
+  width: 370px;
+  background-color: rgba(47, 48, 58, 0.8);
+  left: 0px;
+  bottom: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
 
 /*team*/
 .our-team-section {
@@ -560,12 +579,14 @@ img {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
+  color: var(--text-color);
 }
 .gallery-style-description {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
+  color: var(--text-color);
 }
 
 /*Overlay*/
